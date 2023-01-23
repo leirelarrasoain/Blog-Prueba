@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+}
+.header{
+    background-color: #ddc8e4;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.header > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .header__menu{
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    .header__menu > ul{
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header__menu > ul > li{
+            flex: 1;
+            flex-basis: 20%;
+            list-style-type: none;
+            text-align: center;
+            padding: 0.25rem 1rem;
+        }
+    .header__menu > ul> li > a{
+        list-style-type: none;
+        color: black;
+        text-decoration: none;
+    }
+
+    .header__subscribe{
+        border: 1px solid black;
+        border-radius: 0.25rem;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .header__img{
+        flex-grow: 1;
+        text-align: center;
+        justify-content: center;
+    }
+    .header__img > img{
+        max-height: 4.3rem;
+        max-width: none;
+        border-radius: 100%;
+    } 
+
+main.profiles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0.25rem 1rem;
+    margin-top: 10px;
+}
+    .profiles-card{
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    flex-basis: 15%;
+    margin: 5px;
+    
+     
+}
+.profiles-card__img{
+    flex-grow: 1;
+}
+.profiles-card__img > img{
+   max-width: none;
+   max-height: 10rem;
+}
+.profiles-card > h3{
+    font-size: 1.7rem;
+    align-content: flex-start;
+    justify-content: center;
+    flex: 1;
+
+}
+.profiles-card > p{
+font-size: 1.5rem;
+flex: 1;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 1rem;
+}
+.pricing-tier{
+    display: flex;
+    border: 1px solid black;
+}
+ @media (min-width: 50rem){
+    .pricing{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+    @media (min-width: 50rem){
+        .pricing-tier{
+            flex-direction: column;
+        }
+        }
+.pricing-tier__title{
+    flex: 1;
+    background-color: #ddc8e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-tier__title h3{
+font-size: 1.7rem;
+font-weight: bold;
+margin: 5px;
+text-align: center;
+}
+.pricing-tier__title p{
+    font-size: 1.2rem;
+    margin: 5px;
+    text-align: center;
+
+    }
+
+.pricing-tier__perks{
+    flex: 1;
+}
+.pricing-tier__perks li{
+    list-style-type: none;
+}
+.pricing-tier__subscribe{
+    background-color: rgb(89, 71, 105);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    
+}
+.pricing-tier:nth-child(1){
+    order: 1;
+}
+.pricing-tier:nth-child(2){
+    order: 0;
+}
+.pricing-tier:nth-child(3){
+    order: 2;
+}
