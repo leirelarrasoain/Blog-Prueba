@@ -71,12 +71,10 @@ main.profiles{
     flex-direction: column; 
     flex: 1;
     flex-basis: 15%;
-    margin: 5px;
-    
-     
 }
 .profiles-card__img{
     flex-grow: 1;
+    justify-content: flex-start;
 }
 .profiles-card__img > img{
    max-width: none;
@@ -84,14 +82,16 @@ main.profiles{
 }
 .profiles-card > h3{
     font-size: 1.7rem;
-    align-content: flex-start;
-    justify-content: center;
+    align-items:  center;
+    justify-content: flex-start;
     flex: 1;
 
 }
 .profiles-card > p{
 font-size: 1.5rem;
 flex: 1;
+justify-content: flex-start;
+
 }
 
 .pricing{
